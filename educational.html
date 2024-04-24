@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+ 
+  
+
     <link rel="stylesheet" href="allcss.css" />
 
 </head>
@@ -18,7 +25,7 @@
             <form class="education-form">
                 <div class="name-container">
                     <label for="name" style="margin-left: 1px; ">Name of College/School:</label>
-                    <input type="text" id="name" placeholder="Enter name of college/school" />
+                    <input type="text" id="collegename" placeholder="Enter name of college/school" />
                  </div>
 
                  <div class="name-row">
@@ -41,7 +48,7 @@
             
 
                 <div class="name-row">
-                    <div class="label" style="margin-top: -14px;">Stream:</div>
+                    <div class="label" style="margin-top: -14px;" id="stream">Stream:</div>
                     <div class="label" style="margin-top: -14px;">Semester:</div>
                 </div>
                 <div class="input-row">
@@ -68,6 +75,6 @@
                     </div>
          </form>
         </div>
-    
+    <script src="index.js"></script>
 </body>
 </html>

@@ -253,49 +253,26 @@ p{
 }
 
 
-/* 
 
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 50px auto;
-    }
-    .side {
-        display: none;
-    }
-    .container .input {
-        display: flex;
-        flex-direction: column;
-    }
-    h2, p {
-        margin-left: 20px;
-    }
-    .gender-container input[type="radio"] {
-        margin-left: 0;
-        margin-right: 10px;
-    }
+
+.ui-datepicker {
+    font-size: 12px; /* Adjust the font size as needed */
 }
 
-@media only screen and (max-width: 576px) {
-    .name-row, .input-row {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .label, input[type="text"], .input-row select, .container1 input[type="text"], .container_one input[type="number"] {
-        width: 100%;
-        margin-left: 0;
-    }
-    .btn_one {
-        margin-left: 20px;
-    }
-    .container {
-        width: 90%;
-        margin: 20px auto;
-    }
-    h2, p {
-        margin-left: 10px;
-    }
-    .gender-container input[type="radio"] {
-        margin-right: 5px;
-    }
-} */
+.ui-datepicker .ui-datepicker-header {
+    padding: 0.3em; /* Adjust the header padding */
+}
 
+.ui-datepicker-calendar {
+    width: auto; 
+}
+
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
+    padding: 0.4em; /* Adjust the cell padding */
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    padding: 0.2em; /* Adjust the padding of the default state */
+}
+/* >>>>>>> 1ac2a60d9fd9b796b49c04d82952b38ee3addd8a */
