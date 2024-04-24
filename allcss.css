@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color:rgb(252, 250, 250);
+}
+.side{
+    background-color:white;
+    float: inline-end;
+    height: 500px;
+    width: 100px;
+    margin-right: 234px;
+}
+
+.btn_one{
+    margin-top: 380px;
+    padding: 4px;
+    width: 60px;    
+    margin-left: 20px;
+    color: #3C6E71;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.logo{
+    margin-top: 20px;
+}
+
+h2{
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    margin-left: 165px;
+    color: #3C6E71;
+}
+p{
+    margin-left: 150px;
+    bottom: 20px;
+    color:rgba(0, 0, 0, 0.5) ;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: #EAEFF5FA;
+    margin: 50px auto;
+}
+ 
+.education-form{
+    margin-top: 20px;
+}
+.name-row, .input-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 15px;
+}
+.name-row, .input{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 15px;
+}
+.label{
+    font-size: 14px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    color: #3C6E71;
+    font-weight: bold;
+}
+/* .name-field{
+    font-size: 14px;
+    margin-left: 19px;
+    margin-bottom: 20px;
+    color: #3C6E71;
+    margin-top: 16px;
+    margin-right: 90px;
+    font-weight: bold;
+} */
+/* .name-row .label{
+    margin-top: 1px;
+    margin-right:4px;
+} */
+
+.row,input[type="text"]{
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #3C6E71;
+    font-weight: bold;
+}
+
+.input-row input[type="text"]{
+    width: 75%;
+    font-size: small;
+    padding: 5px;
+    /* margin-top: -22px; */
+   margin: auto;
+   border: none;
+    border-radius: 5px;
+    background-color: (217, 217, 217, 0.4)
+}
+
+.input .blood-select{
+    width: 80%;
+    margin-left: 35px;
+    font-size: small;
+    padding: 1px;
+    /* margin-top: -6px; */
+    color: #3C6E71;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-row .grade-select{
+    width: 75%;
+    margin-left: 20px;
+    font-size: small;
+    padding: 5px;
+    color: #3C6E71;
+    font-weight: bold;
+     border: none;
+    position: relative;
+    bottom: 21px;
+    border-radius: 5px;
+}
+.email-container{
+    margin-left: 30px;
+}
+.email-container label{
+    font-size: 14px;
+    color: #3C6E71;
+    font-weight: bold;
+}
+.email-container input[type="text"]{
+    padding: 5px;
+    font-size: small;
+    width: 61%;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 1px;
+    border: none;
+    border-radius: 5px;
+}
+.input input[type="text"]{
+    padding: 5px;
+    font-size: small;
+    width: 75%;
+    display: flex;
+    margin-top: 8px;
+    margin-left:30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.name-container{
+    margin-left: 22px;
+    margin-bottom: 20px;
+
+}
+.name-container label{
+    font-size: 14px;
+    color: #3C6E71;
+    
+    font-weight: bold;
+    margin-left: 5px;
+}
+.name-container input[type="text"]{
+    padding: 5px;
+    font-size: small;
+    width: 60%;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 1px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-container{
+    margin-left: 495px;
+    margin-top: -55px;
+   
+
+}
+.contact-container label{
+    font-size: 14px;
+    display: flex;
+    color: #3C6E71;
+    font-weight: bold;
+
+}
+.contact-container input[type="number"]{
+    padding: 5px;
+    width: 86%;
+    margin-top: 10px;
+    color: #3C6E71;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.gender-container{
+    margin-left: 25px;
+    margin-top: 35px;
+ }
+ .gender-container label{
+    font-size: 14px;
+    margin-left: 4px;
+    
+ }
+ span{
+    color: #3C6E71;
+    font-weight: bold;
+ }
+ .gender-container input[type="radio"]{
+    margin-left: 12px;
+ }
+ .input-row input[type="number"]{
+    width: 75%;
+    font-size: small;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: (217, 217, 217, 0.4);
+    margin-top: -22px;
+    margin-left: 22px;
+    color: #3C6E71;
+    font-weight: bold;
+
+ }
+ .container3{
+    margin-top: 20px;
+ }
+ .upload-container{
+    margin-left: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #3C6E71;
+    font-weight: bold;
+}
+/* .name-row, .input-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 15px;
+}
+
+
+} */
+.row{
+    font-size: 14px;
+    margin-left: 30px;
+    /* margin-top: 30px; */
+    color: #3C6E71;
+    font-weight: bold;
+}

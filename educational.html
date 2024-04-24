@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="allcss.css" />
+
+</head>
+<body>
+        <div class="side">
+            <img src="https://codingtechnology.com.np/content/upload/logo/logovoyazufbe.jpg" width="100px"  alt="" class="logo"> 
+            <button class="btn_one" >Next</button>
+        </div>
+        <div class="container">
+            <h2 >Educational Information</h2>
+            <p>Please fill out below fields before moving to next </p>
+            <form class="education-form">
+                <div class="name-container">
+                    <label for="name" style="margin-left: 1px; ">Name of College/School:</label>
+                    <input type="text" id="name" placeholder="Enter name of college/school" />
+                 </div>
+
+                 <div class="name-row">
+                    <div class="label" >Country:</div>
+                    <div class="label">City/State:</div>
+                    <div class="label">Grade:</div>
+                </div>
+                <div class="input-row">
+                    <input style="margin-top: -22px;"type="text" id="city_name" placeholder="Enter your country" />
+                    <input style="margin-top: -22px;"type="text" id="country" placeholder="Enter your city name" />
+                    <select class="grade-select">
+                        <option >3-9</option>
+                       <option >SEE</option>
+                       <option >+2</option>
+                       <option >Bachelor</option>
+                       <option >Master</option>
+                       <option >PHD</option>
+                    </select>
+                </div>
+            
+
+                <div class="name-row">
+                    <div class="label" style="margin-top: -14px;">Stream:</div>
+                    <div class="label" style="margin-top: -14px;">Semester:</div>
+                </div>
+                <div class="input-row">
+                    <input style="margin-top: -20px;" type="text" id="stream" placeholder="Enter Stream" />
+                    <input style="margin-top: -20px;" type="text" id="semester" placeholder="Enter Semester" />
+                </div>
+
+                <div class="enroll-container" style="margin-left: 20px;">
+                    <label style="font-size: 14px;"> <span style="font-weight: bold; color: #3C6E71; margin-left: 3px;" >Currently Enrolling:</span></label>
+                    <input style="margin-left: 12px;" type="radio"  name="enrolling" value="yes" />
+                    <label for="yes">Yes</label>
+                    <input style="margin-left: 12px;"type="radio" name="enrolling" value="no" />
+                    <label for="no">No</label>
+                </div>
+                    <div class="container3">
+                        <div class="name-row">
+                            <div class="label" >Passout Year:</div>
+                            <div class="label">GPA:</div>
+                        </div>
+                        <div class="input-row">
+                            <input type="number" id="passout_year" placeholder="Enter Passout Year" />
+                            <input type="number" id="GPA" placeholder="Enter GPA" />
+                        </div>
+                    </div>
+         </form>
+        </div>
+    
+</body>
+</html>
