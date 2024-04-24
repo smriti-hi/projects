@@ -251,3 +251,23 @@ p{
     color: #3C6E71;
     font-weight: bold;
 }
+.ui-datepicker {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 0.3em; /* Adjust the header padding */
+}
+
+.ui-datepicker-calendar {
+    width: auto; 
+}
+
+.ui-datepicker-calendar th,
+.ui-datepicker-calendar td {
+    padding: 0.4em; /* Adjust the cell padding */
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    padding: 0.2em; /* Adjust the padding of the default state */
+}
