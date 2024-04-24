@@ -187,12 +187,22 @@ p{
     font-weight: bold;
 
 }
-.contact-container input[type="number"]{
+/* .contact-container input[type="number"]{
     padding: 5px;
     width: 86%;
     margin-top: 10px;
     color: #3C6E71;
     font-weight: bold;
+    border: none;
+    border-radius: 5px;
+} */
+.contact-container input[type="text"]{
+    padding: 5px;
+    font-size: small;
+    width: 84%;
+    display: flex;
+    margin-top: 8px;
+    margin-left:4px;
     border: none;
     border-radius: 5px;
 }
