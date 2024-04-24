@@ -67,8 +67,6 @@ $(document).ready(function () {
         var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
         $(this).datepicker('setDate', new Date(year, 1));
     }
-  
   })
-
   });
   
