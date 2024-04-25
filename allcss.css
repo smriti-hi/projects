@@ -15,6 +15,7 @@ body{
     margin-right: 234px;
 }
 
+
 .btn_one{
     margin-top: 380px;
     padding: 4px;
@@ -31,16 +32,23 @@ body{
 
 h2{
     margin-bottom: 4px;
+    margin-top: 10px;
     text-transform: uppercase;
-    margin-left: 165px;
+    margin-left: 200px;
     color: #3C6E71;
+    display: inline-block;
 
 }
+h3{
+    margin-left: 20px;
+    color: rgba(60, 110, 113, 1);
+}
 p{
-    margin-left: 150px;
+    margin-left: 170px;
     bottom: 20px;
     color:rgba(0, 0, 0, 0.5) ;
 }
+
 .container{
     width: 700px;
     height: 500px;
@@ -68,19 +76,6 @@ p{
     color: #3C6E71;
     font-weight: bold;
 }
-/* .name-field{
-    font-size: 14px;
-    margin-left: 19px;
-    margin-bottom: 20px;
-    color: #3C6E71;
-    margin-top: 16px;
-    margin-right: 90px;
-    font-weight: bold;
-} */
-/* .name-row .label{
-    margin-top: 1px;
-    margin-right:4px;
-} */
 .row{
     font-size: 14px;
     margin-left: 30px;
@@ -249,11 +244,6 @@ p{
     color: #3C6E71;
     font-weight: bold;
 }
-/* .name-row, .input-row{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-bottom: 15px;
-} */
 
 
 .ui-datepicker {
@@ -277,19 +267,34 @@ p{
     padding: 0.2em; }
 
 
-    @media screen and (max-width: 1150px){
-        .side{
-            
-            margin-right: 100px;
-        }
+   
+#social{
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+#social label{
+    color:  rgba(0, 0, 0, 0.68);
+    
+}
 
-    }
-    @media screen and (max-width: 768px){
-        .side{
-            
-            margin-right: 35px;
-        }
+.last_container{
+    width: 600px;
+    height: 500px;
+    background-color: #EAEFF5FA;
+    margin: 50px auto;
+    
+}
+.last_side{
+    background-color:white;
+    float: inline-end;
+    height: 500px;
+    width: 100px;
+    margin-right: 300px;
+}
+.last_enroll{
+    margin-top: 15px;
+}
 
-    }
+
 
 
