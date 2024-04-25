@@ -5,7 +5,7 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    background-color:rgb(252, 250, 250);
+    background-color:rgb(241, 63, 63);
 }
 .side{
     background-color:white;
@@ -34,6 +34,7 @@ h2{
     text-transform: uppercase;
     margin-left: 165px;
     color: #3C6E71;
+
 }
 p{
     margin-left: 150px;
@@ -80,13 +81,18 @@ p{
     margin-top: 1px;
     margin-right:4px;
 } */
-
+.row{
+    font-size: 14px;
+    margin-left: 30px;
+    /* margin-top: 30px; */
+    color: #3C6E71;
+    font-weight: bold;
+}
 .row,input[type="text"]{
     font-size: 14px;
     margin-left: 30px;
     margin-top: 30px;
     color: #3C6E71;
-    font-weight: bold;
 }
 
 .input-row input[type="text"]{
@@ -101,13 +107,12 @@ p{
 }
 
 .input .blood-select{
-    width: 80%;
+    width: 78%;
     margin-left: 35px;
     font-size: small;
     padding: 1px;
-    /* margin-top: -6px; */
+    margin-top: -6px;
     color: #3C6E71;
-    font-weight: bold;
     border: none;
     border-radius: 5px;
 }
@@ -118,7 +123,6 @@ p{
     font-size: small;
     padding: 5px;
     color: #3C6E71;
-    font-weight: bold;
      border: none;
     position: relative;
     bottom: 21px;
@@ -187,7 +191,7 @@ p{
     font-weight: bold;
 
 }
-.contact-container input[type="number"]{
+/* .contact-container input[type="number"]{
     padding: 5px;
     font-size: small;
     width: 84%;
@@ -196,7 +200,7 @@ p{
     margin-left:4px;
     border: none;
     border-radius: 5px;
-} */
+}  */
 .contact-container input[type="text"]{
     padding: 5px;
     font-size: small;
@@ -233,7 +237,6 @@ p{
     margin-top: -22px;
     margin-left: 22px;
     color: #3C6E71;
-    font-weight: bold;
 
  }
  .container3{
@@ -250,27 +253,15 @@ p{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-bottom: 15px;
-}
-
-
 } */
-.row{
-    font-size: 14px;
-    margin-left: 30px;
-    /* margin-top: 30px; */
-    color: #3C6E71;
-    font-weight: bold;
-}
-
-
 
 
 .ui-datepicker {
-    font-size: 12px; /* Adjust the font size as needed */
+    font-size: 12px; 
 }
 
 .ui-datepicker .ui-datepicker-header {
-    padding: 0.3em; /* Adjust the header padding */
+    padding: 0.3em;
 }
 
 .ui-datepicker-calendar {
@@ -279,10 +270,26 @@ p{
 
 .ui-datepicker-calendar th,
 .ui-datepicker-calendar td {
-    padding: 0.4em; /* Adjust the cell padding */
+    padding: 0.4em; 
 }
 
 .ui-datepicker-calendar .ui-state-default {
-    padding: 0.2em; /* Adjust the padding of the default state */
-}
-/* >>>>>>> 1ac2a60d9fd9b796b49c04d82952b38ee3addd8a */
+    padding: 0.2em; }
+
+
+    @media screen and (max-width: 1150px){
+        .side{
+            
+            margin-right: 100px;
+        }
+
+    }
+    @media screen and (max-width: 768px){
+        .side{
+            
+            margin-right: 35px;
+        }
+
+    }
+
+
