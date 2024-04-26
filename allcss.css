@@ -6,18 +6,12 @@
 body{
     font-family: "Poppins", sans-serif;
     background-color:rgba(207, 204, 204, 0.73);
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    
 }
 .side{
-    /* position: fixed;
-    top: 50px;
-    right: 315px;
-    display: flex; */
+   
     float: inline-end;
     margin-right: 234px;
-    /* flex-direction: column; */
     height: 500px;
     width: 100px;
     background-color: white;
@@ -58,20 +52,11 @@ p{
 }
 
 .container{
-    /* max-width: 700px;
-    width: 100%; */
-    /* width: 700px;
+  
+    width: 700px;
     height: 500px;
     background-color: #EAEFF5FA;
-    margin: 50px auto; */
-}
-.container {
-    width: 90%; /* Modified to be responsive */
-    max-width: 700px;
-    height: auto; /* Modified to be responsive */
-    background-color: #EAEFF5FA;
     margin: 50px auto;
-    padding: 20px; /* Added padding */
 }
 
 .education-form{
@@ -204,16 +189,6 @@ p{
     font-weight: bold;
 
 }
-/* .contact-container input[type="number"]{
-    padding: 5px;
-    font-size: small;
-    width: 84%;
-    display: flex;
-    margin-top: 8px;
-    margin-left:4px;
-    border: none;
-    border-radius: 5px;
-}  */
 .contact-container input[type="text"]{
     padding: 5px;
     font-size: small;
@@ -301,8 +276,6 @@ p{
 }
 
 .last_container{
-    /* max-width: 700px;
-    width: 100%; */
     width: 600px;
     height: 500px;
     background-color: #EAEFF5FA;
@@ -310,11 +283,7 @@ p{
     
 }
 .last_side{
-    /* position: fixed;
-    top: 50px;
-    right: 315px;
-    display: flex;
-    flex-direction: column; */
+    margin-right: 290px;
     float: inline-end;
     height: 500px;
     width: 100px;
@@ -341,32 +310,3 @@ p{
         padding: 20px 0;
     }
 } */
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 50px auto;
-    }
-
-    .side {
-        display: none; /* Hide side div on smaller screens */
-    }
-
-    h2 {
-        margin-left: 20px; /* Adjust heading margin for smaller screens */
-    }
-
-    p {
-        margin-left: 20px; /* Adjust paragraph margin for smaller screens */
-    }
-
-    .row,
-    input[type="text"],
-    .blood-select,
-    .grade-select,
-    input[type="radio"],
-    input[type="number"] {
-        margin-left: 20px; /* Adjust margin for smaller screens */
-    }
-}
-
