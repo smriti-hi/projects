@@ -227,9 +227,11 @@ p{
     font-size: small;
     padding: 5px;
     border: none;
+bottom: 20px;
+position: relative;
     border-radius: 5px;
     background-color: (217, 217, 217, 0.4);
-    margin-top: -22px;
+    margin-top: -2px;
     margin-left: 22px;
     color: #3C6E71;
 
@@ -261,6 +263,9 @@ p{
 .ui-datepicker-calendar th,
 .ui-datepicker-calendar td {
     padding: 0.4em; 
+}
+.ui-datepicker-calendar {
+    display: none;
 }
 
 .ui-datepicker-calendar .ui-state-default {

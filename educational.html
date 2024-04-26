@@ -12,12 +12,12 @@
   
 
     <link rel="stylesheet" href="allcss.css" />
-
+  
 </head>
 <body>
         <div class="side">
             <img src="https://codingtechnology.com.np/content/upload/logo/logovoyazufbe.jpg" width="100px"  alt="" class="logo"> 
-            <button class="btn_one" >Next</button>
+            <button class="btn_one" id="next"  >Next</button>
         </div>
         <div class="container">
             <h2>Educational Information</h2>
@@ -66,15 +66,23 @@
                     <div class="container3">
                         <div class="name-row">
                             <div class="label" >Passout Year:</div>
-                            <div class="label">GPA:</div>
+                            <div class="label">GPA/Percentage</div>
                         </div>
                         <div class="input-row">
-                            <input type="number" id="passout_year" placeholder="Enter Passout Year" />
-                            <input type="number" id="GPA" placeholder="Enter GPA" />
+                            <input type="number" id="passout_year" placeholder="Enter Passout Year"  readonly/>
+                            <select class="grade-select">
+                                <option value="">Select</option>
+                                <option value="GPA">GPA</option>
+                                <option value="Percentage">Percentage</option>
+                            </select>
                         </div>
+                       
                     </div>
+                    
          </form>
         </div>
     <script src="index.js"></script>
+   
+    </script>
 </body>
 </html>
