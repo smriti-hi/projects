@@ -6,16 +6,18 @@
 body{
     font-family: "Poppins", sans-serif;
     background-color:rgba(207, 204, 204, 0.73);
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .side{
-    position: fixed;
+    /* position: fixed;
     top: 50px;
     right: 315px;
-    display: flex;
-    flex-direction: column;
+    display: flex; */
+    float: inline-end;
+    margin-right: 234px;
+    /* flex-direction: column; */
     height: 500px;
     width: 100px;
     background-color: white;
@@ -56,13 +58,22 @@ p{
 }
 
 .container{
-    max-width: 700px;
-    width: 100%;
+    /* max-width: 700px;
+    width: 100%; */
+    /* width: 700px;
     height: 500px;
     background-color: #EAEFF5FA;
-    margin: 50px auto;
+    margin: 50px auto; */
 }
- 
+.container {
+    width: 90%; /* Modified to be responsive */
+    max-width: 700px;
+    height: auto; /* Modified to be responsive */
+    background-color: #EAEFF5FA;
+    margin: 50px auto;
+    padding: 20px; /* Added padding */
+}
+
 .education-form{
     margin-top: 20px;
 }
@@ -234,8 +245,8 @@ p{
     font-size: small;
     padding: 5px;
     border: none;
-bottom: 20px;
-position: relative;
+    bottom: 20px;
+    position: relative;
     border-radius: 5px;
     background-color: (217, 217, 217, 0.4);
     margin-top: -2px;
@@ -290,19 +301,21 @@ position: relative;
 }
 
 .last_container{
-    max-width: 700px;
-    width: 100%;
+    /* max-width: 700px;
+    width: 100%; */
+    width: 600px;
     height: 500px;
     background-color: #EAEFF5FA;
     margin: 50px auto;
     
 }
 .last_side{
-    position: fixed;
+    /* position: fixed;
     top: 50px;
     right: 315px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
+    float: inline-end;
     height: 500px;
     width: 100px;
     background-color: white;
@@ -311,9 +324,9 @@ position: relative;
     margin-top: 15px;
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
     .container {
-        margin-right: 0; /* Remove margin on smaller screens */
+        margin-right: 0;
         height: 500px;
         position: fixed;
         top: 0;
@@ -327,7 +340,33 @@ position: relative;
          right: 0;
         padding: 20px 0;
     }
+} */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .side {
+        display: none; /* Hide side div on smaller screens */
+    }
+
+    h2 {
+        margin-left: 20px; /* Adjust heading margin for smaller screens */
+    }
+
+    p {
+        margin-left: 20px; /* Adjust paragraph margin for smaller screens */
+    }
+
+    .row,
+    input[type="text"],
+    .blood-select,
+    .grade-select,
+    input[type="radio"],
+    input[type="number"] {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
 }
-
-
 
