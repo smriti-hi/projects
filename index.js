@@ -29,34 +29,43 @@ $(document).ready(function () {
     }
   });
 
-  $("#first_name, #middle_name, #last_name, #city_name, #country, #collegename,#stream,#guardian-name,#profession,#counselled").on(
+  $("#first_name, #middle_name, #last_name, #city_name, #country, #collegename,#stream,#guardian-name,#profession,#h3_input").on(
     "input",
     function () {
-      var inputValue = $(this).val();
-      var pattern = /^[A-Za-z\s]+$/;
-      if (!pattern.test(inputValue)) {
-        alert(
-          "Only alphabets and spaces are allowed. Numbers and special symbols are not allowed."
-        );
-        $(this).val(inputValue.replace(/[^A-Za-z\s]+/g, ""));
-      }
+        var inputValue = $(this).val();
+        var pattern = /^[A-Za-z\s]+$/;
+        if (!pattern.test(inputValue)) {
+            $(this).attr("placeholder", "Invalid Entry");
+            $(this).addClass("error"); // Add error class
+            // Remove non-alphabetic characters
+            $(this).val(inputValue.replace(/[^A-Za-z\s]+/g, ""));
+        } else {
+            // Remove any error message and styling from the placeholder if input is valid
+            $(this).attr("placeholder", "");
+            $(this).removeClass("error"); // Remove error class
+        }
     }
-  );
+);
 
-  $("#email").on("blur", function () {
-    var emailValue = $(this).val();
-    var emailPattern = /^[A-Za-z][A-Za-z0-9._]*@gmail\.com$/;
-    if (!emailPattern.test(emailValue)) {
-        alert("Please enter a valid email address ");
-        $(this).val("");
-    }
-  });
+
+$("#email").on("blur", function () {
+  var emailValue = $(this).val();
+  var emailPattern = /^[A-Za-z][A-Za-z0-9._]*@gmail\.com$/;
+  if (!emailPattern.test(emailValue)) {
+      $(this).attr("placeholder", "Please enter a valid email address");
+      $(this).addClass("error"); 
+      $(this).val("");
+  } else {
+      $(this).attr("placeholder", "");
+      $(this).removeClass("error"); 
+  }
+});
   
 $("#contact").on("input", function () {
     var contactValue = $(this).val();
     var contactPattern = /^\d{0,10}$/; 
     if (!contactPattern.test(contactValue)) {
-        alert("Contact Number can have only 10 digits");
+        // alert("Contact Number can have only 10 digits");
         $(this).val(contactValue.replace(/\D/g, "").substring(0, 10)); 
     }
 });

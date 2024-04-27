@@ -293,6 +293,9 @@ p{
     margin-top: 15px;
 }
 
-
-
-
+.error::placeholder {
+    color: red;
+    font-style: italic; 
+    font-size: 2px;
+    
+}
