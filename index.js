@@ -135,13 +135,11 @@ inputField.css({
     'margin-left': '15px',
     'width': '190px',
     'padding': '5px',
-    // 'border': '1px solid #ccc',
     'border-radius': '5px',
     'box-sizing': 'border-box'
 });
 inputField.on("input", function () {
   var inputValue = $(this).val();
-  // Regular expression to match percentage format (0-100 with optional decimal)
   var percentagePattern = /^(100(?:\.0{1,2})?|\d{0,2}(?:\.\d{0,2})?)%?$/;
 
   if (!percentagePattern.test(inputValue)) {
