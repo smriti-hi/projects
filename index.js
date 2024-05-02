@@ -98,7 +98,7 @@ var parentDiv = $(this).closest('.input-row');
 // Remove any existing input fields next to the dropdown
 parentDiv.find('.additional-input').remove();
 
-// Add input field based on selected option
+
 if (selectedOption === "GPA") {
   var inputField = $('<input type="text" class="additional-input" placeholder="Enter ' + selectedOption + '">');
   inputField.css({
@@ -141,8 +141,7 @@ inputField.css({
 });
 inputField.on("input", function () {
   var inputValue = $(this).val();
-  // Regular expression to match percentage format (0-100 with optional decimal)
-  var percentagePattern = /^(100(?:\.0{1,2})?|\d{0,2}(?:\.\d{0,2})?)%?$/;
+    var percentagePattern = /^(100(?:\.0{1,2})?|\d{0,2}(?:\.\d{0,2})?)%?$/;
 
   if (!percentagePattern.test(inputValue)) {
    alert("invalid percentage")
